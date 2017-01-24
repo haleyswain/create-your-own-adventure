@@ -1,7 +1,5 @@
 <p>
   {{selectedScenario.description}}
 </p>
-<a>
-  {{selectedScenario.option1}}
-</a><br>
-<a>{{selectedScenario.option2}}</a>
+<a (click)="goToNewScenario(selectedScenario.option1Id)">{{selectedScenario.option1}}</a><br>
+<a (click)="goToNewScenario(selectedScenario.option2Id)">{{selectedScenario.option2}}</a>

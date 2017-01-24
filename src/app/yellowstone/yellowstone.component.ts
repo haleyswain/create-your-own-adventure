@@ -15,12 +15,17 @@ export class YellowstoneComponent implements OnInit {
   scenarioId: number;
   selectedScenario: Scenario;
 
-  constructor(private route: ActivatedRoute, private location: Location, private scenarioService: ScenarioService) {}
+  constructor(private router: Router, private route: ActivatedRoute, private location: Location, private scenarioService: ScenarioService) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParametersArray) => {
       this.scenarioId = parseInt(urlParametersArray['id']);
-    });
     this.selectedScenario = this.scenarioService.getScenarioById(this.scenarioId);
+    });
   }
+
+  goToNewScenario(clickedScenario: number) {
+    this.router.navigate(['yellowstone', clickedScenario]);
+    console.log(clickedScenario);
+  };
 }

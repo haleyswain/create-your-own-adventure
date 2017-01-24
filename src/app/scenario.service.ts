@@ -11,10 +11,14 @@ export class ScenarioService {
     return SCENARIOS;
   }
 
-  getScenarioById(scenarioId: number) {
-    for (var i = 0; i<=SCENARIOS.length - 1; i++) {
-      if (SCENARIOS[i].id === scenarioId) {
+  getScenarioById(scenarioOptionId: number) {
+    for (var i = 0; i<SCENARIOS.length; i++) {
+      if (SCENARIOS[i].option1Id === scenarioOptionId) {
+        console.log("option id " + scenarioOptionId);
         return SCENARIOS[i];
+      } else if (SCENARIOS[i].option2Id === scenarioOptionId) {
+        console.log(SCENARIOS[i]);
+        return SCENARIOS[i+1];
       }
     }
   }

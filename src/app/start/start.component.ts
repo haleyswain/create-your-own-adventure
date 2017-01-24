@@ -17,12 +17,13 @@ export class StartComponent implements OnInit {
   constructor(private router: Router, private scenarioService: ScenarioService) {}
 
   ngOnInit(){
-    this.selectedScenario = this.scenarioService.getScenarioById(1);
-    console.log(this.selectedScenario.option1);
-  }
+    console.log(this.scenarios);
+    this.selectedScenario = this.scenarioService.getScenarios()[0];
+  };
 
-  goToNewScenario(clickedScenario: Scenario) {
-    this.router.navigate(['yellowstone', clickedScenario.id]);
+  goToNewScenario(clickedScenario: number) {
+    this.router.navigate(['yellowstone', clickedScenario]);
+    console.log(clickedScenario);
   };
 
 

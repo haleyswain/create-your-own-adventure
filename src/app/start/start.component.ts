@@ -21,10 +21,14 @@ export class StartComponent implements OnInit {
     this.selectedScenario = this.scenarioService.getScenarios()[0];
   };
 
-  goToNewScenario(clickedScenario: number) {
+  goToNewGlacier(clickedScenario: number) {
     this.router.navigate(['yellowstone', clickedScenario]);
     console.log(clickedScenario);
   };
 
+  goToNewYellowstone(clickedScenario: number) {
+    this.router.navigate(['yellowstone', clickedScenario]);
+    console.log(clickedScenario);
+  };
 
 }

@@ -15,7 +15,7 @@ export class ScenarioService {
     for (var i = 0; i<SCENARIOS.length; i++) {
       if (SCENARIOS[i].option1Id === scenarioOptionId) {
         console.log("option id " + scenarioOptionId);
-        return SCENARIOS[i+1];
+        return SCENARIOS[i+2];
       } else if (SCENARIOS[i].option2Id === scenarioOptionId) {
         console.log(SCENARIOS[i]);
         return SCENARIOS[i+1];

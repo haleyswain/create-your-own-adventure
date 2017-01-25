@@ -9,5 +9,4 @@ export const SCENARIOS: Scenario[] = [
   new Scenario("A giant avalance crushes a beautiful herd of elk. You feel bad.", 6, "turn yourself in to the police", 11, "live in a cave for penance for the rest of your life", 12),
   new Scenario("You want to see some wildlife while you're in the park, so you go for a hike. You spot a momma bear and her cubs! What do you do?", 3, "Cuddle Puddle!!",5 , "Grab the handy bear spray you brought!",6 ),
   new Scenario("You know that Huckleberries grow in the park, but you're not sure what they look like. You're extremely hungry and would love to have something sweet. What should you do?", 4, "Eat all the berries in sight. Theres no way any of them are poisinous.", 7, "Consult your handy guidebook that lists all the kinds of berries found in Glacier.", 8)
-
 ];

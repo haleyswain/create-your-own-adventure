@@ -22,7 +22,7 @@ export class StartComponent implements OnInit {
   };
 
   goToNewGlacier(clickedScenario: number) {
-    this.router.navigate(['yellowstone', clickedScenario]);
+    this.router.navigate(['glacier', clickedScenario]);
     console.log(clickedScenario);
   };
 

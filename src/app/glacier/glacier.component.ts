@@ -25,7 +25,7 @@ export class GlacierComponent implements OnInit {
   }
 
   goToNewScenario(clickedScenario: number) {
-    this.router.navigate(['yellowstone', clickedScenario]);
+    this.router.navigate(['glacier', clickedScenario]);
     console.log(clickedScenario);
   };
 }

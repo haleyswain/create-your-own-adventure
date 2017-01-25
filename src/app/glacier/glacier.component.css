@@ -1,0 +1,9 @@
+p {
+  font-size: 20px;
+}
+
+.description {
+  background-color: white;
+  padding: 10%;
+  text-align: center;
+}

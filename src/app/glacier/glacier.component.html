@@ -1,3 +1,9 @@
+
+<div class = "description">
 <p>
-  glacier works!
+  {{selectedScenario.description}}
 </p>
+<a (click)="goToNewScenario(selectedScenario.option1Id)">{{selectedScenario.option1}}</a><br>
+<a (click)="goToNewScenario(selectedScenario.option2Id)">{{selectedScenario.option2}}</a>
+<br>
+</div>
